@@ -1,0 +1,24 @@
+# _config.yml (Basic version for browser setup)
+
+# -- Site Settings --
+title: Blog Của Tôi # Tiêu đề trang
+url: "https://gael.github.io" # URL đầy đủ
+baseurl: "" # Để trống
+
+# -- Build Settings --
+markdown: kramdown
+remote_theme: "mmistakes/minimal-mistakes@4.24.0" # Sử dụng theme
+plugins:
+  - jekyll-feed # Plugin cơ bản cho RSS
+
+# -- Theme Settings --
+minimal_mistakes_skin: "default" # Chọn skin màu (vd: air, dark, etc.)
+
+# -- Defaults for posts -- (Layout cơ bản cho bài viết)
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      author_profile: true # Hiện sidebar tác giả bên trái
